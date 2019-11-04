@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9181ad2c-0947-436a-8b93-e2d36a8d5bcf" name="Default Changelist" comment="" />
+    <list default="true" id="9181ad2c-0947-436a-8b93-e2d36a8d5bcf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/java_core_1/homework/oject_model_public_transport/models/autopark/Autopark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java_core_1/homework/oject_model_public_transport/models/autopark/Park.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java_core_1/homework/oject_model_public_transport/models/transport/Bus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java_core_1/homework/oject_model_public_transport/models/transport/ElectricTransport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java_core_1/homework/oject_model_public_transport/models/transport/PetrolTransport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java_core_1/homework/oject_model_public_transport/models/transport/PublicTransport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java_core_1/homework/oject_model_public_transport/models/transport/Tram.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java_core_1/homework/oject_model_public_transport/models/transport/Transport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java_core_1/homework/oject_model_public_transport/models/transport/Trolleybus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java_core_1/homework/oject_model_public_transport/models/utillity/ParkManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java_core_1/homework/oject_model_public_transport/runner/Run.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,16 +23,24 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectId" id="1TAAR32kwmnlGlZgDto4UOokOPL" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -55,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572894063027</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="first test commit">
+      <created>1572894327913</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1572894327913</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
