@@ -8,6 +8,6 @@ import java.util.List;
 public interface Park {
      boolean add(Transport transport);
 
-    List<PublicTransport> get();
+    List<Transport> get();
 
 }
