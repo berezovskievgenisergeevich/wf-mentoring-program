@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9181ad2c-0947-436a-8b93-e2d36a8d5bcf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/java_core_1/homework/dynamic_array/Run.java" afterDir="false" />
+    <list default="true" id="9181ad2c-0947-436a-8b93-e2d36a8d5bcf" name="Default Changelist" comment="add method toString() to DynamicArray&#10;and refactor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java_core_1/homework/dynamic_array/DynamicArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java_core_1/homework/dynamic_array/DynamicArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java_core_1/homework/oject_model_public_transport/models/transport/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java_core_1/homework/oject_model_public_transport/models/transport/Bus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java_core_1/homework/oject_model_public_transport/models/transport/ElectricTransport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java_core_1/homework/oject_model_public_transport/models/transport/ElectricTransport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java_core_1/homework/oject_model_public_transport/models/transport/PetrolTransport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java_core_1/homework/oject_model_public_transport/models/transport/PetrolTransport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java_core_1/homework/oject_model_public_transport/models/transport/PublicTransport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java_core_1/homework/oject_model_public_transport/models/transport/PublicTransport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java_core_1/homework/oject_model_public_transport/models/transport/Tram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java_core_1/homework/oject_model_public_transport/models/transport/Tram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java_core_1/homework/oject_model_public_transport/models/transport/Transport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java_core_1/homework/oject_model_public_transport/models/transport/Transport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java_core_1/homework/oject_model_public_transport/models/transport/Trolleybus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java_core_1/homework/oject_model_public_transport/models/transport/Trolleybus.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +39,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AP Mass Upload Journal is not created after Invoice Tagging - 8 Oct 2019" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
@@ -115,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572898230124</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add method toString() to DynamicArray&#10;and refactor">
+      <created>1572938625523</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1572938625523</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -134,6 +146,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first test commit" />
     <MESSAGE value="create abstract object model" />
-    <option name="LAST_COMMIT_MESSAGE" value="create abstract object model" />
+    <MESSAGE value="add method toString() to DynamicArray&#10;and refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="add method toString() to DynamicArray&#10;and refactor" />
   </component>
 </project>
