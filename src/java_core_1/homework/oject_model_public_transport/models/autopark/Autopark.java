@@ -6,29 +6,24 @@ import java_core_1.homework.oject_model_public_transport.models.transport.Transp
 import java.util.ArrayList;
 import java.util.List;
 
-public  class Autopark implements Park {
-    private List<PublicTransport> transports;
+public class Autopark implements Park {
+    private List<Transport> transports;
 
     public Autopark() {
         this.transports = new ArrayList<>();
     }
 
-    public Autopark(List<PublicTransport> transports) {
+    public Autopark(List<Transport> transports) {
         this.transports = transports;
-    }
-
-
-    public boolean add(PublicTransport transport) {
-        return transports.add(transport);
     }
 
 
     @Override
     public boolean add(Transport transport) {
-        return false;
+        return transports.add(transport);
     }
 
-    public List<PublicTransport> get() {
+    public List<Transport> get() {
         return transports;
     }
 }
