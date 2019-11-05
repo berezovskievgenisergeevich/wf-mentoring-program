@@ -11,6 +11,11 @@ public abstract class PublicTransport implements Transport {
         this.fuelConsumption = fuelConsumption;
     }
 
+    public static final String getPublicTransportInfo() {
+        return "This is information about public transport in Belarus.\n" +
+                "Public transport is: buses, trolleybuses and trams.";
+    }
+
     @Override
     public void run() {
         System.out.println("PublicTransport run");
