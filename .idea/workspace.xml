@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9181ad2c-0947-436a-8b93-e2d36a8d5bcf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java_core_1/homework/oject_model_public_transport/models/SearchOption.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java_core_1/homework/oject_model_public_transport/models/autopark/Autopark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java_core_1/homework/oject_model_public_transport/models/autopark/Autopark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java_core_1/homework/oject_model_public_transport/models/autopark/Park.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java_core_1/homework/oject_model_public_transport/models/autopark/Park.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/java_core_1/homework/oject_model_public_transport/models/transport/PublicTransport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java_core_1/homework/oject_model_public_transport/models/transport/PublicTransport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java_core_1/homework/oject_model_public_transport/models/utillity/ParkManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java_core_1/homework/oject_model_public_transport/models/utillity/ParkManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/java_core_1/homework/oject_model_public_transport/runner/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java_core_1/homework/oject_model_public_transport/runner/Run.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,6 +22,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -34,6 +40,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../AP Mass Upload Journal is not created after Invoice Tagging - 8 Oct 2019" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
@@ -129,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572961128480</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add final static method to PublicTrancport">
+      <created>1572961769773</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1572961769773</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -150,6 +164,7 @@
     <MESSAGE value="create abstract object model" />
     <MESSAGE value="add method toString() to DynamicArray&#10;and refactor" />
     <MESSAGE value="add polimorfism to Transport" />
-    <option name="LAST_COMMIT_MESSAGE" value="add polimorfism to Transport" />
+    <MESSAGE value="add final static method to PublicTrancport" />
+    <option name="LAST_COMMIT_MESSAGE" value="add final static method to PublicTrancport" />
   </component>
 </project>

@@ -5,6 +5,18 @@ public abstract class PublicTransport implements Transport {
     private String cost;
     private String fuelConsumption;
 
+    public String getName() {
+        return name;
+    }
+
+    public String getCost() {
+        return cost;
+    }
+
+    public String getFuelConsumption() {
+        return fuelConsumption;
+    }
+
     public PublicTransport(String name, String cost, String fuelConsumption) {
         this.name = name;
         this.cost = cost;
