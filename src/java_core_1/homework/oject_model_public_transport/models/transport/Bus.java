@@ -4,4 +4,9 @@ public class Bus extends PetrolTransport {
     public Bus(String name, String cost, String fuelConsumption) {
         super(name, cost, fuelConsumption);
     }
+
+    @Override
+    public void run() {
+        System.out.println("Bus run");
+    }
 }

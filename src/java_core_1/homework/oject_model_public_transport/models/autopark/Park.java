@@ -6,8 +6,8 @@ import java_core_1.homework.oject_model_public_transport.models.transport.Transp
 import java.util.List;
 
 public interface Park {
-     boolean add(Transport transport);
+     boolean add(PublicTransport transport);
 
-    List<Transport> get();
+    List<PublicTransport> get();
 
 }

@@ -1,5 +1,6 @@
 package java_core_1.homework.dynamic_array;
 
+
 /**
  * Parameterizable class like ArrayList, allows you to store an array of elements of any type.
  * Supports adding an element to the end of an array.
@@ -9,11 +10,19 @@ package java_core_1.homework.dynamic_array;
  * @param <T>
  */
 public class DynamicArray<T> {
+
     private final int INIT_SIZE = 16;
     private final int CUT_RATE = 4;
     private Object[] array = new Object[INIT_SIZE];
     private int pointer = 0;
 
+    public DynamicArray() {
+    }
+
+    public DynamicArray(int size) {
+        this();
+        this.resize(size);
+    }
 
     /**
      * Adds a new item to the list. When the size of the internal
@@ -77,4 +86,15 @@ public class DynamicArray<T> {
         array = newArray;
     }
 
+    @Override
+    public String toString() {
+        int size = size();
+        StringBuffer stringBuffer = new StringBuffer();
+        stringBuffer.append("[");
+        for (int i = 0; i < size; i++) {
+            stringBuffer.append(array[i]).append(" ");
+        }
+        stringBuffer.append("]");
+        return stringBuffer.toString();
+    }
 }
