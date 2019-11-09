@@ -1,9 +1,8 @@
-package java_core_1.homework.oject_model_public_transport.models.utillity;
+package com.epam.javaCore1.homework.ojectModelPublicTransport.models.utillity;
 
-import java_core_1.homework.oject_model_public_transport.models.SearchOption;
-import java_core_1.homework.oject_model_public_transport.models.autopark.Autopark;
-import java_core_1.homework.oject_model_public_transport.models.transport.PetrolTransport;
-import java_core_1.homework.oject_model_public_transport.models.transport.PublicTransport;
+import com.epam.javaCore1.homework.ojectModelPublicTransport.models.transport.PublicTransport;
+import com.epam.javaCore1.homework.ojectModelPublicTransport.models.SearchOption;
+import com.epam.javaCore1.homework.ojectModelPublicTransport.models.autopark.Autopark;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package java_core_1.homework.dynamic_array;
+package com.epam.javaCore1.homework.dynamicArray;
 
 
 /**
