@@ -1,4 +1,4 @@
-package java_core_1.lectures;
+package com.epam.javaCore1.lectures;
 
 public class TestClass {
     public void test(){}

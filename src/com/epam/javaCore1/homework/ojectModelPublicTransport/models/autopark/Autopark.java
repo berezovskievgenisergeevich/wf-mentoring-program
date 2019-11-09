@@ -1,6 +1,6 @@
-package java_core_1.homework.oject_model_public_transport.models.autopark;
+package com.epam.javaCore1.homework.ojectModelPublicTransport.models.autopark;
 
-import java_core_1.homework.oject_model_public_transport.models.transport.PublicTransport;
+import com.epam.javaCore1.homework.ojectModelPublicTransport.models.transport.PublicTransport;
 
 import java.util.ArrayList;
 import java.util.List;

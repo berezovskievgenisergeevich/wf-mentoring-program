@@ -1,4 +1,4 @@
-package java_core_1.homework.oject_model_public_transport.models.transport;
+package com.epam.javaCore1.homework.ojectModelPublicTransport.models.transport;
 
 public class Bus extends PetrolTransport {
     public Bus(String name, String cost, String fuelConsumption) {
@@ -6,7 +6,7 @@ public class Bus extends PetrolTransport {
     }
 
     @Override
-    public void run() {
+    public void move() {
         System.out.println("Bus run");
     }
 }
