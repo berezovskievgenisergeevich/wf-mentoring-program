@@ -7,7 +7,7 @@ import com.epam.javaCore1.homework.ojectModelPublicTransport.models.transport.Pu
 import com.epam.javaCore1.homework.ojectModelPublicTransport.models.transport.Tram;
 import com.epam.javaCore1.homework.ojectModelPublicTransport.models.transport.Trolleybus;
 import java_core_1.homework.oject_model_public_transport.models.transport.*;
-import com.epam.javaCore1.homework.ojectModelPublicTransport.models.utillity.ParkManager;
+import com.epam.javaCore1.homework.ojectModelPublicTransport.models.utils.ParkManager;
 
 public class Run {
     public static void main(String[] args) {

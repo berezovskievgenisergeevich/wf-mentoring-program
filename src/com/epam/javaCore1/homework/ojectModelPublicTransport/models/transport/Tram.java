@@ -6,7 +6,7 @@ public class Tram extends ElectricTransport {
     }
 
     @Override
-    public void run() {
+    public void move() {
         System.out.println("Tram run");
     }
 }

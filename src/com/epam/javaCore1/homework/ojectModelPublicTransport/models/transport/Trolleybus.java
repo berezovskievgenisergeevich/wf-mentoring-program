@@ -6,7 +6,7 @@ public class Trolleybus extends ElectricTransport {
     }
 
     @Override
-    public void run() {
+    public void move() {
         System.out.println("Trolleybus run");
     }
 }

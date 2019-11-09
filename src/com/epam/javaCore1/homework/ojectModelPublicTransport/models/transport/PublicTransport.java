@@ -1,6 +1,6 @@
 package com.epam.javaCore1.homework.ojectModelPublicTransport.models.transport;
 
-public abstract class PublicTransport implements Transport {
+public abstract class PublicTransport implements Movable {
     private String name;
     private String cost;
     private String fuelConsumption;
@@ -29,7 +29,7 @@ public abstract class PublicTransport implements Transport {
     }
 
     @Override
-    public void run() {
+    public void move() {
         System.out.println("PublicTransport run");
     }
 

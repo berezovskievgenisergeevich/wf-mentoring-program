@@ -6,7 +6,7 @@ public class Bus extends PetrolTransport {
     }
 
     @Override
-    public void run() {
+    public void move() {
         System.out.println("Bus run");
     }
 }
