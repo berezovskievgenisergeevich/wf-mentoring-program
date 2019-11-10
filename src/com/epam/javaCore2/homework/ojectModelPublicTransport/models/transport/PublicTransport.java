@@ -1,10 +1,15 @@
 package com.epam.javaCore2.homework.ojectModelPublicTransport.models.transport;
 
+import com.epam.javaCore2.homework.ojectModelPublicTransport.customAnnotators.UseStackOnly;
+
 public abstract class PublicTransport implements Movable {
     private static final String PUBLIC_TRANSPORT_INFO = "This is information about public transport in Belarus.\n" +
             "Public transport is: buses, trolleybuses and trams.";
+    @UseStackOnly
     private String name;
+    @UseStackOnly
     private String cost;
+    @UseStackOnly
     private String fuelConsumption;
 
     public String getName() {

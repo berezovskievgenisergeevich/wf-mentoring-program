@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9181ad2c-0947-436a-8b93-e2d36a8d5bcf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/runner/Task2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/customAnnotators/ThisCodeSmells.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/customAnnotators/UseArrayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/customAnnotators/UseStackOnly.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/runner/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/runner/Run.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/models/transport/PublicTransport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/models/transport/PublicTransport.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,9 +20,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -202,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573406483367</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Task 2&#10;look into com.epam.javaCore2.homework.ojectModelPublicTransport.runner.Task2">
+      <created>1573408955155</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1573408955155</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -228,6 +238,7 @@
     <MESSAGE value="refactor imports&#10;rename interface&#10;rename utils" />
     <MESSAGE value="add exceptions" />
     <MESSAGE value="Task 1&#10;add @Deprecated in PublicTransport.getPublicTransportInfo()&#10;add @SuppressWarnings in ParkManager.methodWithSuppressWarnings()&#10;add @FunctionalInterface in Movable(interface)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Task 1&#10;add @Deprecated in PublicTransport.getPublicTransportInfo()&#10;add @SuppressWarnings in ParkManager.methodWithSuppressWarnings()&#10;add @FunctionalInterface in Movable(interface)" />
+    <MESSAGE value="Task 2&#10;look into com.epam.javaCore2.homework.ojectModelPublicTransport.runner.Task2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task 2&#10;look into com.epam.javaCore2.homework.ojectModelPublicTransport.runner.Task2" />
   </component>
 </project>
