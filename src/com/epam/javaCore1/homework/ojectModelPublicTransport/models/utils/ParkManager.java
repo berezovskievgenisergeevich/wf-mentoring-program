@@ -1,5 +1,8 @@
 package com.epam.javaCore1.homework.ojectModelPublicTransport.models.utils;
 
+import com.epam.javaCore1.homework.ojectModelPublicTransport.exceptions.AupotarkIsNotCreatedException;
+import com.epam.javaCore1.homework.ojectModelPublicTransport.exceptions.NotSupportedTransportException;
+import com.epam.javaCore1.homework.ojectModelPublicTransport.exceptions.PublicTransportException;
 import com.epam.javaCore1.homework.ojectModelPublicTransport.models.SearchOption;
 import com.epam.javaCore1.homework.ojectModelPublicTransport.models.autopark.Autopark;
 import com.epam.javaCore1.homework.ojectModelPublicTransport.models.transport.PublicTransport;
@@ -21,7 +24,10 @@ public class ParkManager {
         curAutopark = autopark;
     }
 
-    public static List<PublicTransport> searchBy(SearchOption searchOption, String searchData) {
+    public static List<PublicTransport> searchBy(SearchOption searchOption, String searchData) throws AupotarkIsNotCreatedException, NotSupportedTransportException {
+        if (isAutoparkNotCreated())
+            throw new AupotarkIsNotCreatedException();
+
         switch (searchOption) {
             case COST:
                 return curAutopark.getByCost(searchData);
@@ -30,7 +36,11 @@ public class ParkManager {
             case FUEL_CONSUMPTION:
                 return curAutopark.getByFuelConsumption(searchData);
             default:
-                return null;
+                throw new NotSupportedTransportException();
         }
+    }
+
+    private static boolean isAutoparkNotCreated() {
+        return curAutopark == null;
     }
 }
