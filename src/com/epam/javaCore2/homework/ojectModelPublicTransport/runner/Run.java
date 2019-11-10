@@ -15,20 +15,16 @@ public class Run {
     public static void main(String[] args) {
 
         System.out.println(PublicTransport.getPublicTransportInfo());
-
         try {
             ParkManager.searchBy(SearchOption.NAME, "tram");
         } catch (PublicTransportException e) {
             e.printStackTrace();
         }
-
         Autopark autopark = ParkManager.createAutopark();
-
         autopark.add(new Bus("bus", "1", "1"));
         autopark.add(new Tram("tram", "2", "2"));
         autopark.add(new Tram("tram", "3", "3"));
         autopark.add(new Trolleybus("trolleybus", "3", "3"));
-
 
         try {
             System.out.println(ParkManager.searchBy(SearchOption.NAME, "tram"));
@@ -36,6 +32,8 @@ public class Run {
         } catch (AupotarkIsNotCreatedException | NotSupportedTransportException e) {
             e.printStackTrace();
         }
+
+
 
 
     }
