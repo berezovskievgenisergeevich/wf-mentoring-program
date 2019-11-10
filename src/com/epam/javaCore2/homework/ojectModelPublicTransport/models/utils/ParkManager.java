@@ -1,5 +1,6 @@
 package com.epam.javaCore2.homework.ojectModelPublicTransport.models.utils;
 
+import com.epam.javaCore2.homework.ojectModelPublicTransport.customAnnotators.ThisCodeSmells;
 import com.epam.javaCore2.homework.ojectModelPublicTransport.exceptions.AupotarkIsNotCreatedException;
 import com.epam.javaCore2.homework.ojectModelPublicTransport.exceptions.NotSupportedTransportException;
 import com.epam.javaCore2.homework.ojectModelPublicTransport.models.SearchOption;
@@ -8,12 +9,15 @@ import com.epam.javaCore2.homework.ojectModelPublicTransport.models.transport.Pu
 
 import java.util.List;
 
+@ThisCodeSmells(reviewer = "ParkManager")
 public class ParkManager {
+    @ThisCodeSmells(reviewer = "field")
     private static Autopark curAutopark;
 
     private ParkManager() {
     }
 
+    @ThisCodeSmells
     public static Autopark createAutopark() {
         curAutopark = new Autopark();
         return curAutopark;
