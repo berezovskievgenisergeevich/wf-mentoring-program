@@ -1,6 +1,8 @@
 package com.epam.javaCore1.homework.ojectModelPublicTransport.models.transport;
 
 public abstract class PublicTransport implements Movable {
+    private static final String PUBLIC_TRANSPORT_INFO = "This is information about public transport in Belarus.\n" +
+            "Public transport is: buses, trolleybuses and trams.";
     private String name;
     private String cost;
     private String fuelConsumption;
@@ -24,8 +26,7 @@ public abstract class PublicTransport implements Movable {
     }
 
     public static final String getPublicTransportInfo() {
-        return "This is information about public transport in Belarus.\n" +
-                "Public transport is: buses, trolleybuses and trams.";
+        return PUBLIC_TRANSPORT_INFO;
     }
 
     @Override
