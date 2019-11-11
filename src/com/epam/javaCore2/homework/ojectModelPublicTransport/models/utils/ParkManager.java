@@ -28,6 +28,7 @@ public class ParkManager {
         String testString = "";
     }
 
+    @ThisCodeSmells
     public static void setCurAutopark(Autopark autopark) {
         curAutopark = autopark;
     }
