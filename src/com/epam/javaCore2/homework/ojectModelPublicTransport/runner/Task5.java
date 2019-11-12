@@ -1,23 +1,32 @@
 package com.epam.javaCore2.homework.ojectModelPublicTransport.runner;
 
 import com.epam.javaCore2.homework.ojectModelPublicTransport.customAnnotators.ProdCode;
-import com.epam.javaCore2.homework.ojectModelPublicTransport.customAnnotators.ThisCodeSmells;
 import com.epam.javaCore2.homework.ojectModelPublicTransport.exceptions.NotUseSmellCodeException;
 import com.epam.javaCore2.homework.ojectModelPublicTransport.models.utils.ClassFinder;
-import com.epam.javaCore2.homework.ojectModelPublicTransport.models.utils.ClassWithProdCode;
 
 public class Task5 {
-    public static void main(String[] args) throws NotUseSmellCodeException {
-        new ClassWithProdCode().printHelloWorldProd();
-        Task4.getMethodsUsingAnnotation(ClassWithProdCode.class, ProdCode.class).forEach(System.out::println);
+    public static void main(String[] args) {
 
-        ClassFinder.find("com.epam.javaCore2.homework.ojectModelPublicTransport.models.utils").stream()
-                .forEach(aClass -> {
-                    System.out.println(aClass);
+        /*Methods are using Prod code annotation:
+         *  com.epam.javaCore2.homework.ojectModelPublicTransport.models.transport.Bus.move()
+         *  com.epam.javaCore2.homework.ojectModelPublicTransport.models.utils.ClassWithProdCode.printHelloWorldProd();
+         * */
 
+        String searchPath = "com.epam.javaCore2.homework";
+        Class searchAnnotation = ProdCode.class;
+
+        ClassFinder.find(searchPath).stream()
+                .forEach(findClass -> {
+                    try {
+                        Task4.getMethodsUsingAnnotation(findClass, searchAnnotation).forEach(method -> {
+                            try {
+                                Task2.invokeMethod(findClass, method.getName());
+                            } catch (Exception e) {
+                            }
+                        });
+                    } catch (NotUseSmellCodeException e) {
+                    }
                 });
-
-
-
     }
 }
+
