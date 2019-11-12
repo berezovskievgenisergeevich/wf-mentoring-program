@@ -16,11 +16,11 @@ public class Task4 {
 
 
 
-      /*  try {
+        try {
             printAllSmellCode(ParkManager.class);
         } catch (NotUseSmellCodeException e) {
             e.printStackTrace();
-        }*/
+        }
     }
 
     public static Class getClassUsingAnnotation(String className, Class annotation) throws ClassNotFoundException, NotUseSmellCodeException {
@@ -35,7 +35,7 @@ public class Task4 {
     }
 
     public static List<Method> getMethodsUsingAnnotation(Class cl, Class annotation) throws NotUseSmellCodeException {
-        List declaredNames = Arrays.stream(cl.getDeclaredMethods()).filter(method -> method.isAnnotationPresent(ThisCodeSmells.class)).collect(Collectors.toList());
+        List declaredNames = Arrays.stream(cl.getDeclaredMethods()).filter(method -> method.isAnnotationPresent(annotation/*ThisCodeSmells.class*/)).collect(Collectors.toList());
         if (declaredNames.isEmpty())
             throw new NotUseSmellCodeException("Class [" + cl.getName() + "] NOT USE " + annotation.getName() + " method annotation");
 
@@ -43,7 +43,7 @@ public class Task4 {
     }
 
     public static List<Field> getFieldsUsingAnnotation(Class cl, Class annotation) throws NotUseSmellCodeException {
-        List declaredNames = Arrays.stream(cl.getDeclaredFields()).filter(field -> field.isAnnotationPresent(ThisCodeSmells.class)).collect(Collectors.toList());
+        List declaredNames = Arrays.stream(cl.getDeclaredFields()).filter(field -> field.isAnnotationPresent(annotation/*ThisCodeSmells.class*/)).collect(Collectors.toList());
         if (declaredNames.isEmpty())
             throw new NotUseSmellCodeException("Class [" + cl.getName() + "] NOT USE " + annotation.getName() + " field annotation");
 
