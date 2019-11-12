@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9181ad2c-0947-436a-8b93-e2d36a8d5bcf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/exceptions/NotUseSmellCodeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/models/utils/ClassFinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/models/utils/ClassWithProdCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/runner/Task5.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/customAnnotators/ThisCodeSmells.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/customAnnotators/ThisCodeSmells.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/models/utils/ParkManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/models/utils/ParkManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/models/transport/PublicTransport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/models/transport/PublicTransport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/runner/Task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/runner/Task2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/runner/Task4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/runner/Task4.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,20 +64,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Task4">
-    <configuration name="Run (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="java_core_1.homework.dynamic_array.Run" />
-      <module name="wf-mentoring-program" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="java_core_1.homework.dynamic_array.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Task5">
     <configuration name="Run (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.epam.javaCore1.homework.ojectModelPublicTransport.runner.Run" />
       <module name="wf-mentoring-program" />
@@ -128,13 +117,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Task5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.epam.javaCore2.homework.ojectModelPublicTransport.runner.Task5" />
+      <module name="wf-mentoring-program" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.epam.javaCore2.homework.ojectModelPublicTransport.runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Task5" />
         <item itemvalue="Application.Task4" />
         <item itemvalue="Application.Task2" />
         <item itemvalue="Application.Run (2)" />
         <item itemvalue="Application.Run" />
-        <item itemvalue="Application.Run (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -240,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573414028869</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Task 4&#10;refactoring">
+      <created>1573503451179</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1573503451180</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -269,6 +278,7 @@
     <MESSAGE value="Task 2&#10;look into com.epam.javaCore2.homework.ojectModelPublicTransport.runner.Task2" />
     <MESSAGE value="Task 3&#10;Create custom annotations&#10;look into com.epam.javaCore2.homework.ojectModelPublicTransport.customAnnotatos" />
     <MESSAGE value="Task 4&#10;All smelt code names (classes, method, fields)&#10;look into com.epam.javaCore2.homework.ojectModelPublicTransport.runner.Task4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Task 4&#10;All smelt code names (classes, method, fields)&#10;look into com.epam.javaCore2.homework.ojectModelPublicTransport.runner.Task4" />
+    <MESSAGE value="Task 4&#10;refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task 4&#10;refactoring" />
   </component>
 </project>

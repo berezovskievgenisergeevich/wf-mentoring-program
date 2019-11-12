@@ -50,6 +50,11 @@ public class Task2 {
         Method method = Bus.class.getMethod("move");
         method.invoke(bus);
     }
+    public static void invokeMethod(Class aClass, String methodName) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+        Method method =  aClass.getMethod(methodName);
+        method.invoke(aClass);
+
+    }
 
     /**
      * Use reflection API to fill private fields without setters

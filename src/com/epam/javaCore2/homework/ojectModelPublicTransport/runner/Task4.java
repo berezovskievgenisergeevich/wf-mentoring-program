@@ -14,18 +14,26 @@ import java.util.stream.Collectors;
 public class Task4 {
     public static void main(String[] args) {
 
-        try {
+
+
+      /*  try {
             printAllSmellCode(ParkManager.class);
         } catch (NotUseSmellCodeException e) {
             e.printStackTrace();
-        }
+        }*/
     }
 
-    public static Class getClassUsingAnnotation(Class cl, Class annotation)throws NotUseSmellCodeException {
+    public static Class getClassUsingAnnotation(String className, Class annotation) throws ClassNotFoundException, NotUseSmellCodeException {
+        Class cl = Class.forName(className);
+        return getClassUsingAnnotation(cl, annotation);
+    }
+
+    public static Class getClassUsingAnnotation(Class cl, Class annotation) throws NotUseSmellCodeException {
         if (cl.isAnnotationPresent(annotation))
             return cl;
         throw new NotUseSmellCodeException("Class [" + cl.getName() + "] NOT USE " + annotation.getName() + " annotation");
     }
+
     public static List<Method> getMethodsUsingAnnotation(Class cl, Class annotation) throws NotUseSmellCodeException {
         List declaredNames = Arrays.stream(cl.getDeclaredMethods()).filter(method -> method.isAnnotationPresent(ThisCodeSmells.class)).collect(Collectors.toList());
         if (declaredNames.isEmpty())
@@ -33,6 +41,7 @@ public class Task4 {
 
         return declaredNames;
     }
+
     public static List<Field> getFieldsUsingAnnotation(Class cl, Class annotation) throws NotUseSmellCodeException {
         List declaredNames = Arrays.stream(cl.getDeclaredFields()).filter(field -> field.isAnnotationPresent(ThisCodeSmells.class)).collect(Collectors.toList());
         if (declaredNames.isEmpty())
@@ -43,15 +52,15 @@ public class Task4 {
 
 
     public static String getClassNameUsingAnnotation(Class cl, Class annotation) throws NotUseSmellCodeException {
-        return getClassUsingAnnotation(cl,annotation).getName();
+        return getClassUsingAnnotation(cl, annotation).getName();
     }
 
     public static List<String> getMethodsNameUsingAnnotation(Class cl, Class annotation) throws NotUseSmellCodeException {
-        return getMethodsUsingAnnotation(cl,annotation).stream().map(method -> method.getName()).collect(Collectors.toList());
+        return getMethodsUsingAnnotation(cl, annotation).stream().map(method -> method.getName()).collect(Collectors.toList());
     }
 
     public static List<String> getFieldsNameUsingAnnotation(Class cl, Class annotation) throws NotUseSmellCodeException {
-      return getFieldsUsingAnnotation(cl, annotation).stream().map(field -> field.getName()).collect(Collectors.toList());
+        return getFieldsUsingAnnotation(cl, annotation).stream().map(field -> field.getName()).collect(Collectors.toList());
     }
 
     private static String getClassNameUsingSmellCode(Class cl) throws NotUseSmellCodeException {
@@ -66,7 +75,7 @@ public class Task4 {
         return getFieldsNameUsingAnnotation(cl, ThisCodeSmells.class);
     }
 
-    private static void printAllSmellCode(Class cl) throws NotUseSmellCodeException {
+    public static void printAllSmellCode(Class cl) throws NotUseSmellCodeException {
         printClassSmellCode(cl);
         printMethodsUseSmellCode(cl);
         printFieldsUseSmellCode(cl);

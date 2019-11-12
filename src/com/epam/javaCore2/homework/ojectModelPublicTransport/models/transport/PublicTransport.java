@@ -1,5 +1,6 @@
 package com.epam.javaCore2.homework.ojectModelPublicTransport.models.transport;
 
+import com.epam.javaCore2.homework.ojectModelPublicTransport.customAnnotators.ProdCode;
 import com.epam.javaCore2.homework.ojectModelPublicTransport.customAnnotators.UseStackOnly;
 
 public abstract class PublicTransport implements Movable {
