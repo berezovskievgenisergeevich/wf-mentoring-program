@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9181ad2c-0947-436a-8b93-e2d36a8d5bcf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/customAnnotators/ProdCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/customAnnotators/ProdCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/models/transport/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/models/transport/Bus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/models/utils/ClassWithProdCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/models/utils/ClassWithProdCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/runner/Task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/runner/Task2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/runner/Task4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/runner/Task4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/runner/Task5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/runner/Task5.java" afterDir="false" />
+
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
