@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9181ad2c-0947-436a-8b93-e2d36a8d5bcf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/epam/javaCore3/homework/BitOfConcurrency.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/customAnnotators/ProdCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/customAnnotators/ProdCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/models/transport/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/models/transport/Bus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/models/utils/ClassWithProdCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/models/utils/ClassWithProdCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/runner/Task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/runner/Task2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/runner/Task4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/runner/Task4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/runner/Task5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/epam/javaCore2/homework/ojectModelPublicTransport/runner/Task5.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="java_core_2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -64,13 +59,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Task5">
-    <configuration name="Run (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.epam.javaCore1.homework.ojectModelPublicTransport.runner.Run" />
+  <component name="RunManager" selected="Application.BitOfConcurrency">
+    <configuration name="BitOfConcurrency" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.epam.javaCore3.homework.BitOfConcurrency" />
       <module name="wf-mentoring-program" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.epam.javaCore1.homework.ojectModelPublicTransport.runner.*" />
+          <option name="PATTERN" value="com.epam.javaCore3.homework.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,12 +73,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Run" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="java_core_1.homework.oject_model_public_transport.runner.Run" />
+    <configuration name="Run (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.epam.javaCore1.homework.ojectModelPublicTransport.runner.Run" />
       <module name="wf-mentoring-program" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="java_core_1.homework.oject_model_public_transport.runner.*" />
+          <option name="PATTERN" value="com.epam.javaCore1.homework.ojectModelPublicTransport.runner.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,11 +127,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BitOfConcurrency" />
         <item itemvalue="Application.Task5" />
         <item itemvalue="Application.Task4" />
         <item itemvalue="Application.Task2" />
         <item itemvalue="Application.Run (2)" />
-        <item itemvalue="Application.Run" />
       </list>
     </recent_temporary>
   </component>
@@ -249,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573503451180</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Task 5&#10;refactoring">
+      <created>1573543046601</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1573543046601</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -279,6 +281,7 @@
     <MESSAGE value="Task 3&#10;Create custom annotations&#10;look into com.epam.javaCore2.homework.ojectModelPublicTransport.customAnnotatos" />
     <MESSAGE value="Task 4&#10;All smelt code names (classes, method, fields)&#10;look into com.epam.javaCore2.homework.ojectModelPublicTransport.runner.Task4" />
     <MESSAGE value="Task 4&#10;refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Task 4&#10;refactoring" />
+    <MESSAGE value="Task 5&#10;refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task 5&#10;refactoring" />
   </component>
 </project>
