@@ -1,6 +1,5 @@
 package com.epam.javaCore3.homework.task3.section1;
 
-
 import java.util.function.*;
 
 /**
