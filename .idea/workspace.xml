@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9181ad2c-0947-436a-8b93-e2d36a8d5bcf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/epam/javaCore3/homework/task2/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/epam/javaCore3/homework/task2/PersonCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/epam/javaCore3/homework/task2/Runner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/epam/javaCore3/homework/task3/section1/Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,7 +59,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Runner">
+  <component name="RunManager" selected="Application.Runner (1)">
     <configuration name="BitOfConcurrency" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.epam.javaCore3.homework.BitOfConcurrency" />
       <module name="wf-mentoring-program" />
@@ -75,12 +73,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.epam.javaCore3.homework.task2.Runner" />
+    <configuration name="Runner (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.epam.javaCore3.homework.task3.section1.Runner" />
       <module name="wf-mentoring-program" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.epam.javaCore3.homework.task2.*" />
+          <option name="PATTERN" value="com.epam.javaCore3.homework.task3.section1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,12 +86,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.epam.javaCore2.homework.ojectModelPublicTransport.runner.Task2" />
+    <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.epam.javaCore3.homework.task2.Runner" />
       <module name="wf-mentoring-program" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.epam.javaCore2.homework.ojectModelPublicTransport.runner.*" />
+          <option name="PATTERN" value="com.epam.javaCore3.homework.task2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,11 +127,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Runner (1)" />
         <item itemvalue="Application.Runner" />
         <item itemvalue="Application.BitOfConcurrency" />
         <item itemvalue="Application.Task5" />
         <item itemvalue="Application.Task4" />
-        <item itemvalue="Application.Task2" />
       </list>
     </recent_temporary>
   </component>
@@ -260,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573636626341</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Task 2&#10;Sort with comparator">
+      <created>1573642620967</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1573642620967</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -292,6 +297,7 @@
     <MESSAGE value="Task 4&#10;refactoring" />
     <MESSAGE value="Task 5&#10;refactoring" />
     <MESSAGE value="Task 1&#10;Create several instances of Runnable interface with different behavior using lambda expressions. Run these lambdas via Thread API." />
-    <option name="LAST_COMMIT_MESSAGE" value="Task 1&#10;Create several instances of Runnable interface with different behavior using lambda expressions. Run these lambdas via Thread API." />
+    <MESSAGE value="Task 2&#10;Sort with comparator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task 2&#10;Sort with comparator" />
   </component>
 </project>
