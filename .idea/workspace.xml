@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9181ad2c-0947-436a-8b93-e2d36a8d5bcf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/epam/javaCore3/homework/task5/Author.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/epam/javaCore3/homework/task5/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/epam/javaCore3/homework/task5/Runner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/epam/javaCore3/homework/task5/utils/Creator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/epam/javaCore3/homework/task5/utils/Functions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/epam/javaCore3/homework/task6/Box.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/epam/javaCore3/homework/task6/MinMaxCollector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/epam/javaCore3/homework/task6/Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,13 +41,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="extract.method.default.visibility" value="public" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/epam/javaCore2/homework" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveMembersDialog.RECENTS_KEY">
-      <recent name="printIsSomeBooksHaveMoreThen200Pages" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.epam.javaCore3.homework.task6" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\user\IdeaProjects\wf-mentoring-program\src\com\epam\javaCore2\homework" />
@@ -108,11 +105,11 @@
       </method>
     </configuration>
     <configuration name="Runner (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.epam.javaCore3.homework.task5.Runner" />
+      <option name="MAIN_CLASS_NAME" value="com.epam.javaCore3.homework.task6.Runner" />
       <module name="wf-mentoring-program" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.epam.javaCore3.homework.task5.*" />
+          <option name="PATTERN" value="com.epam.javaCore3.homework.task6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -287,14 +284,7 @@
       <option name="project" value="LOCAL" />
       <updated>1573656004432</updated>
     </task>
-    <task id="LOCAL-00020" summary="Task 4. Custom Functional Interface&#10;&#10;1. Write your own functional interface ThreeFunction (it takes three arguments and produce result).&#10;&#10;2. Implement this with two different lambdas">
-      <created>1573656764857</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1573656764857</updated>
-    </task>
-    <option name="localTasksCounter" value="21" />
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -329,7 +319,6 @@
     <MESSAGE value="Task 2&#10;Sort with comparator" />
     <MESSAGE value="Task 3.1&#10;Implement Standard Java functional interfaces" />
     <MESSAGE value="Task 3.2 Create own Fun Interface&#10;3.3 add default method&#10;3.4 add static method" />
-    <MESSAGE value="Task 4. Custom Functional Interface&#10;&#10;1. Write your own functional interface ThreeFunction (it takes three arguments and produce result).&#10;&#10;2. Implement this with two different lambdas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Task 4. Custom Functional Interface&#10;&#10;1. Write your own functional interface ThreeFunction (it takes three arguments and produce result).&#10;&#10;2. Implement this with two different lambdas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task 3.2 Create own Fun Interface&#10;3.3 add default method&#10;3.4 add static method" />
   </component>
 </project>
