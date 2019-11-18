@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9181ad2c-0947-436a-8b93-e2d36a8d5bcf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/epam/javaCore3/homework/task6/Box.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/epam/javaCore3/homework/task6/MinMaxCollector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/epam/javaCore3/homework/task6/Runner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/epam/javaCore3/homework/task7/MyBigDecimalSummaryCollector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/epam/javaCore3/homework/task7/Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,6 +33,7 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1TAAR32kwmnlGlZgDto4UOokOPL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -41,12 +41,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/epam/javaCore2/homework" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="extract.method.default.visibility" value="public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.epam.javaCore3.homework.task6" />
+    <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="printIsSomeBooksHaveMoreThen200Pages" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\user\IdeaProjects\wf-mentoring-program\src\com\epam\javaCore2\homework" />
@@ -64,20 +65,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Runner (4)">
-    <configuration name="Runner (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.epam.javaCore3.homework.task3.section1.Runner" />
-      <module name="wf-mentoring-program" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.epam.javaCore3.homework.task3.section1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Runner">
     <configuration name="Runner (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.epam.javaCore3.homework.task3.section2.Runner" />
       <module name="wf-mentoring-program" />
@@ -105,6 +93,19 @@
       </method>
     </configuration>
     <configuration name="Runner (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.epam.javaCore3.homework.task5.Runner" />
+      <module name="wf-mentoring-program" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.epam.javaCore3.homework.task5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Runner (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.epam.javaCore3.homework.task6.Runner" />
       <module name="wf-mentoring-program" />
       <extension name="coverage">
@@ -118,11 +119,11 @@
       </method>
     </configuration>
     <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.epam.javaCore3.homework.task2.Runner" />
+      <option name="MAIN_CLASS_NAME" value="com.epam.javaCore3.homework.task7.Runner" />
       <module name="wf-mentoring-program" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.epam.javaCore3.homework.task2.*" />
+          <option name="PATTERN" value="com.epam.javaCore3.homework.task7.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,11 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Runner" />
+        <item itemvalue="Application.Runner (5)" />
         <item itemvalue="Application.Runner (4)" />
         <item itemvalue="Application.Runner (3)" />
         <item itemvalue="Application.Runner (2)" />
-        <item itemvalue="Application.Runner (1)" />
-        <item itemvalue="Application.Runner" />
       </list>
     </recent_temporary>
   </component>
@@ -284,7 +285,21 @@
       <option name="project" value="LOCAL" />
       <updated>1573656004432</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Task 4. Custom Functional Interface&#10;&#10;1. Write your own functional interface ThreeFunction (it takes three arguments and produce result).&#10;&#10;2. Implement this with two different lambdas">
+      <created>1573656764857</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1573656764857</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Task 5. Collection to stream&#10;Create a stream of books and then:&#10;&#10;I. check if some/all book(s) have more than 200 pages;&#10;&#10;II. find the books with max and min number of pages;&#10;&#10;III. filter books with only single author;&#10;&#10;IV. sort the books by number of pages/title;&#10;&#10;V. get list of all titles;&#10;&#10;VI. print them using forEach method;&#10;&#10;VII. get distinct list of all authors">
+      <created>1573828786581</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1573828786581</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -319,6 +334,8 @@
     <MESSAGE value="Task 2&#10;Sort with comparator" />
     <MESSAGE value="Task 3.1&#10;Implement Standard Java functional interfaces" />
     <MESSAGE value="Task 3.2 Create own Fun Interface&#10;3.3 add default method&#10;3.4 add static method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Task 3.2 Create own Fun Interface&#10;3.3 add default method&#10;3.4 add static method" />
+    <MESSAGE value="Task 4. Custom Functional Interface&#10;&#10;1. Write your own functional interface ThreeFunction (it takes three arguments and produce result).&#10;&#10;2. Implement this with two different lambdas" />
+    <MESSAGE value="Task 5. Collection to stream&#10;Create a stream of books and then:&#10;&#10;I. check if some/all book(s) have more than 200 pages;&#10;&#10;II. find the books with max and min number of pages;&#10;&#10;III. filter books with only single author;&#10;&#10;IV. sort the books by number of pages/title;&#10;&#10;V. get list of all titles;&#10;&#10;VI. print them using forEach method;&#10;&#10;VII. get distinct list of all authors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task 5. Collection to stream&#10;Create a stream of books and then:&#10;&#10;I. check if some/all book(s) have more than 200 pages;&#10;&#10;II. find the books with max and min number of pages;&#10;&#10;III. filter books with only single author;&#10;&#10;IV. sort the books by number of pages/title;&#10;&#10;V. get list of all titles;&#10;&#10;VI. print them using forEach method;&#10;&#10;VII. get distinct list of all authors" />
   </component>
 </project>
