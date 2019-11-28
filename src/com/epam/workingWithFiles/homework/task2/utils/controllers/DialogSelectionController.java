@@ -1,6 +1,7 @@
 package com.epam.workingWithFiles.homework.task2.utils.controllers;
 
 import com.epam.workingWithFiles.homework.task2.utils.models.DialogSelectionModel;
+import com.epam.workingWithFiles.homework.task2.utils.models.Info;
 
 import java.io.File;
 
@@ -33,10 +34,9 @@ public class DialogSelectionController {
         int number = 0;
         try {
             number = Integer.parseInt(functionNumber);
+            isNumberInRange(number);
             return number;
         } catch (NumberFormatException e) {
-            System.out.printf("You entered [%s] wrong function number\n" +
-                    "enter an integer in the range 1-4\n", functionNumber);
             repeatSelectedFunctionNumber();
         }
 
@@ -45,7 +45,22 @@ public class DialogSelectionController {
 
     private static int repeatSelectedFunctionNumber() {
         return DialogSelectionController.getSelectedFunctionNumber(DialogSelectionModel.enterFunctionDialog());
+    }
 
+    private static boolean isNumberInRange(int number) {
+        if (isInRange(number))
+            return true;
+        printNotRangeInfo(number);
+        throw new NumberFormatException();
+    }
+
+    private static boolean isInRange(int number) {
+        return number > Info.MIN_RANGE_NUMBER && number < Info.MAX_RANGE_NUMBER;
+    }
+
+    private static void printNotRangeInfo(int number) {
+        System.out.printf("You entered an incorrect number [%s]\n" +
+                "It's not in the range [%s-%s]\n", number, Info.MIN_RANGE_NUMBER + 1, Info.MAX_RANGE_NUMBER - 1);
     }
 
 }
