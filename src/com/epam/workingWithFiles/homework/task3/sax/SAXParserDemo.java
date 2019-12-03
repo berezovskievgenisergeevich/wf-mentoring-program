@@ -2,7 +2,6 @@ package com.epam.workingWithFiles.homework.task3.sax;
 
 import com.epam.workingWithFiles.homework.task3.model.PlayModel;
 import com.epam.workingWithFiles.homework.task3.utils.Info;
-import org.xml.sax.SAXException;
 
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
@@ -22,8 +21,6 @@ public class SAXParserDemo {
             saxParser.parse(input, handler);
             playModel.p.forEach(System.out::println);
 
-        } catch (SAXException e) {
-            e.printStackTrace();
         } catch (Exception e) {
             e.printStackTrace();
         }
