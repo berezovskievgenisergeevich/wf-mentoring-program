@@ -5,15 +5,41 @@ import com.epam.jdbcIntro.homework.task3.model.User;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class UsersController extends ConnectionToDB {
 
     public static void addUser(User users) throws SQLException {
         String sql = getInsertSql(users);
-        statement.execute(sql);
-        System.out.println(sql + " - SUCCESS");
+        executeSql(sql);
     }
+
+    public static List<User> getUsersWithParams(int friendsCount, int likesCount) {
+        Set<Integer> usersId = getUsersIdWithParams(friendsCount, likesCount);
+        List<User> users = new ArrayList<>();
+        usersId.forEach(id -> {
+            try {
+                users.add(getUser(id));
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        });
+
+        return users;
+
+    }
+
+    public static Set<Integer> getUsersIdWithParams(int friendsCount, int likesCount) {
+        List<Integer> idWhereLikesMoreThen = LikeController.getIdWhereLikesMoreThen(likesCount);
+        List<Integer> idWhereFriendshipMoreThen = FriendshipController.getIdWhereFriendshipMoreThen(friendsCount);
+        Set<Integer> ids = new HashSet<>();
+        ids.addAll(idWhereFriendshipMoreThen);
+        ids.addAll(idWhereLikesMoreThen);
+        return ids;
+    }
+
 
     public static List<User> getAllUsers() throws SQLException {
         List<User> users = new ArrayList<>();
@@ -53,7 +79,7 @@ public class UsersController extends ConnectionToDB {
     }
 
     private static void addUserToList(List<User> users, ResultSet resultSet) throws SQLException {
-        users.add(new User(resultSet)/*new Users(resultSet.getInt(1), resultSet.getString(2), resultSet.getString(3), resultSet.getString(4))*/);
+        users.add(new User(resultSet));
     }
 
 }

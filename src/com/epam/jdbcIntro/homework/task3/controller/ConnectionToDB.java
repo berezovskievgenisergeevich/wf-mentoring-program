@@ -23,4 +23,6 @@ public class ConnectionToDB {
         statement.execute(sql);
         System.out.println(sql + " - SUCCESS");
     }
+
+
 }

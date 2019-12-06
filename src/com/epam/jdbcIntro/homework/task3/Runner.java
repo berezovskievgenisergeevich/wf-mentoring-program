@@ -1,10 +1,10 @@
 package com.epam.jdbcIntro.homework.task3;
 
+import com.epam.jdbcIntro.homework.task3.controller.UsersController;
 import com.epam.jdbcIntro.homework.task3.model.Friendship;
 import com.epam.jdbcIntro.homework.task3.model.Like;
 import com.epam.jdbcIntro.homework.task3.model.Post;
 import com.epam.jdbcIntro.homework.task3.model.User;
-import com.epam.jdbcIntro.homework.task3.urils.UserCreator;
 
 import java.sql.SQLException;
 
@@ -15,12 +15,29 @@ public class Runner {
         Like like = new Like(1, 1, "01-01-2010");
         Post post = new Post(1, "text to post", "01-01-2011");
 
-        //  UsersController.addUser(users);
+
+        //  UsersController.addUser(UserCreator.createUser());
+        //  FriendshipCreator.createFriendships(70000).forEach(System.out::println);
+        // PostCreator.createPosts(Info.MAX_POST_COUNT).forEach(System.out::println);
+
+        // LikeCreator.createLikes(100).forEach(System.out::println);
+
         // UsersController.getAllUsers().forEach(System.out::println);
         //  System.out.println(UsersController.getUser(2));
         // FriendshipController.addFriendship(friendships);
         //  LikeController.addLike(like);
-        System.out.println(UserCreator.createUser());
-       // PostController.addPost(post);
+
+        // PostController.addPost(post);
+
+       // DBUtils.addUsers();
+
+          //  DBUtils.addFriendships();
+           // DBUtils.addLikes();
+
+        UsersController.getUsersWithParams(10,20).forEach(System.out::println);
+
+      //  DBUtils.addPosts();
+       // DBUtils.addLikes();
+
     }
 }

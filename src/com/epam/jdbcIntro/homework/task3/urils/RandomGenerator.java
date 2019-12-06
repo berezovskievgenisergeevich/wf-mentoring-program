@@ -1,36 +1,29 @@
 package com.epam.jdbcIntro.homework.task3.urils;
 
-import java.io.FileNotFoundException;
 import java.util.List;
 import java.util.Random;
 
+import static com.epam.jdbcIntro.homework.task3.data.Info.*;
+
 public class RandomGenerator {
-    private static int MIN_DAY = 1;
-    private static int MAX_DAY = 31;
-    private static int MIN_MONTHS = 1;
-    private static int MAX_MONTHS = 12;
-    private static int MIN_YEAR = 1990;
-    private static int MAX_YEAR = 2025;
 
     private static DataReader dataReader = new DataReader();
-    private static List<String> names;
-    private static List<String> lastNames;
-
-    static {
-        try {
-            names = dataReader.getListNames();
-            lastNames = dataReader.getListLastNames();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-    }
+    private static List<String> names = dataReader.getListNames();
+    private static List<String> lastNames = dataReader.getListLastNames();
+    private static List<String> text = dataReader.getText();
 
     public static void main(String[] args) {
-        System.out.println(generateName());
-        System.out.println(generateLastName());
-        System.out.println(generateBirthday());
+
+        System.out.println(generateText());
     }
 
+    public static String generateText() {
+        return text.get(getRandomNumberOfRange(0, text.size() - 1));
+    }
+
+    public static int generateRandomPostId() {
+        return getRandomNumberOfRange(1, MAX_POST_COUNT);
+    }
 
     public static String generateBirthday() {
         StringBuffer buffer = new StringBuffer();
@@ -41,15 +34,35 @@ public class RandomGenerator {
     }
 
     public static String generateName() {
-       return names.get(getRandomNumberOfRange(0, names.size()));
-    }
-    public static String generateLastName() {
-        return lastNames.get(getRandomNumberOfRange(0, lastNames.size())).trim();
+        return names.get(getRandomNumberOfRange(0, names.size() - 1));
     }
 
+    public static String generateLastName() {
+        return lastNames.get(getRandomNumberOfRange(0, lastNames.size() - 1)).trim();
+    }
+
+    public static int getRandomUserId() {
+        return getRandomNumberOfRange(MIN_USER_ID, MAX_USER_ID);
+    }
+
+    public static int getRandomUserId(int userId) {
+        int id = getRandomNumberOfRange(MIN_USER_ID, MAX_USER_ID);
+        if (userId == id)
+            getRandomUserId(userId);
+        return id;
+    }
+
+    public static String getRandomTimestamp() {
+        return getRandomNumberOfRange(MIN_TIMESTAMP, MAX_TIMESTAMP) + "";
+    }
 
     private static int getRandomNumberOfRange(int min, int max) {
         Random rnd = new Random(System.currentTimeMillis());
+        try {
+            Thread.sleep(5);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         return min + rnd.nextInt(max - min + 1);
     }
 

@@ -16,4 +16,14 @@ public class Post {
     public Post(int userId, String text, String timestamp) {
         this(-1, userId, text, timestamp);
     }
+
+    @Override
+    public String toString() {
+        return "Post{" +
+                "id=" + id +
+                ", userId=" + userId +
+                ", text='" + text + '\'' +
+                ", timestamp='" + timestamp + '\'' +
+                '}';
+    }
 }

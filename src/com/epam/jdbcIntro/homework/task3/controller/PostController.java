@@ -8,8 +8,7 @@ public class PostController extends ConnectionToDB {
     public static void addPost(Post post) throws SQLException {
         String sql = getInsertSql(post);
         executeSql(sql);
-        /*statement.execute(sql);
-        System.out.println(sql + " - SUCCESS");*/
+
     }
 
     private static String getInsertSql(Post post) {
