@@ -7,8 +7,8 @@ import java.util.Properties;
 
 public class MyFirstConnection {
     private static final String URL = "jdbc:mysql://127.0.0.1:3306/wf_mentoring?useSSL=false";
-    private static final String USER_NAME = "root";
-    private static final String PASSWORD = "root";
+    private static final String USER_NAME = "";
+    private static final String PASSWORD = "rooroott";
 
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
         Connection connection = getConnection();

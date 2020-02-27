@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+
+    $(document).ready ( function(){
+    $("#ex").each(function (o, elt) {
+  var newElt = $("<textarea />");
+  Array.prototype.slice.call(elt.attributes).forEach(function(a) {
+    newElt.attr(a.name, a.value);
+  });
+  $(elt).wrapInner(newElt).children(0).unwrap();
+});
+});
+
+
+    </script>
+</head>
+<body>
+<input class="field" id="ex" name="ex" type="text" value="">
+</body>
+</html>

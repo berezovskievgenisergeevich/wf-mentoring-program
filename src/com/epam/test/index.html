@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+<!--    input{
+    height:500px;
+    width:500px;
+    word-break: break-word;
+}
+
+&lt;!&ndash;    .resizable{
+     border: 2px solid;
+  padding: 20px;
+  width: 300px;
+  resize: both;
+  overflow: auto;
+    }&ndash;&gt;
+
+   &lt;!&ndash;    .resizable-input {
+    /* make resizable */
+    overflow-x: hidden;
+    resize: horizontal;
+    display: inline-block;
+
+    /* no extra spaces */
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+
+    /* default widths */
+    width: 10em;
+    min-width: 2em;
+    max-width: 30em;
+}
+
+/* let <input> assume the size of the wrapper */
+.resizable-input > input {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* add a visible handle */
+.resizable-input > span {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: -16px;
+    width: 16px;
+    height: 16px;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAAJUlEQVR4AcXJRwEAIBAAIPuXxgiOW3xZYzi1Q3Nqh+bUDk1yD9sQaUG/4ehuEAAAAABJRU5ErkJggg==");
+    cursor: ew-resize;
+}&ndash;&gt;
+
+#source {
+  border: 1px solid #ccc;
+  height: auto;
+  margin-top: 10px;
+  min-height: 10px;
+  overflow: auto;
+  padding: 5px;
+  width: 106px;
+  word-break: break-word;-->
+}
+    </style>
+
+    <script >
+ <!--   $('input[type="button"]').click(function(e) {
+  $('input[type="text"]').val($('#source').html());
+});
+
+        $("#multilineinput").on('keyup',function(e) {
+    $("#detailsfield").val($(this).text()); //store content to input[type=hidden]
+});
+
+//optional - one line but wrap it
+$("#multilineinput").on('keypress',function(e) {
+    if(e.which == 13) { //on enter
+        e.preventDefault(); //disallow newlines
+        // here comes your code to submit
+    }
+});-->
+
+
+document.getElementById("ta").addEventListener("keyup", function(e){
+    document.getElementById("it").value = document.getElementById("it").value + e.key;
+});
+    </script>
+</head>
+<body>
+
+<input name="ip" type="text" id="it" style="display:none;"></input>
+<textarea id='ta'></textarea>
+<input type="submit" id="btn">submit</button>
+<br><br>
+
+<input type="textarea">
+
+<!--<span class="resizable-input"><input type="text" /><span></span></span>-->
+
+<!--<input class="resizable" type="text" />-->
+
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<div id="source" contenteditable=""><input type="text" name="text" /></div>
+
+<input type="button" value="Send" />-->
+<!--<div id="multilineinput" contenteditable="true"></div>
+<input type="hidden" id="detailsfield" name="detailsfield">-->
+</body>
+</html>
