@@ -1,5 +1,6 @@
 package com.epam.jdbcIntro.lectures;
 
+import java.io.File;
 import java.sql.*;
 import java.util.Properties;
 
@@ -8,8 +9,8 @@ import java.util.Properties;
  * скачать mysql-installer-web-community-8.0.18.0
  * установить сервер (настроить )
  * установить workbanch
- *
- *
+ * <p>
+ * <p>
  * создать конекшен
  * jdbc:mysql://127.0.0.1:3306/wf_mentoring
  * wf_mentoring - имя базы данных на сервере(test)
@@ -20,7 +21,10 @@ public class TestConnection {
     private static final String USER_NAME = "root";
     private static final String PASSWORD = "root";
 
+
+
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
+        File file = new File("C:\\Windows\\System32\\cmd.exe");
   /*      Class.forName("com.mysql.jdbc.Driver");
         Connection con=DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/world","root","root");*/
@@ -28,6 +32,7 @@ public class TestConnection {
 
         System.out.println(connection.getCatalog());
         System.out.println(connection.getTransactionIsolation());
+
 
    /*     Statement st = connection.createStatement();
         st.execute("CREATE TABLE IF NOT EXISTS user(id INT NULL)");
@@ -39,7 +44,7 @@ public class TestConnection {
     }
 
 
-    private static Connection getConnection() throws SQLException {
+    protected static Connection getConnection() throws SQLException {
         Properties props = new Properties();
         props.setProperty("user", USER_NAME);
         props.setProperty("password", PASSWORD);

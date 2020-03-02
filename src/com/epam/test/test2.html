@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+function changeTagName(el, newTagName) {
+  var n = document.createElement(newTagName);
+  var attr = el.attributes;
+  for (var i = 0, len = attr.length; i < len; ++i) {
+    n.setAttribute(attr[i].name, attr[i].value);
+  }
+  n.innerHTML = el.innerHTML;
+  el.parentNode.replaceChild(n, el);
+}
+
+    $(document).ready ( function(){
+    changeTagName(document.getElementById('ex'), 'textarea');
+});
+
+
+    </script>
+</head>
+<body>
+<input class="field" id="ex" name="ex" type="text" value=""/>
+
+</body>
+</html>
