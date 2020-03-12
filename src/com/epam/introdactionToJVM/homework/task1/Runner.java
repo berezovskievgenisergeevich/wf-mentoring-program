@@ -7,7 +7,7 @@ import sun.misc.Unsafe;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.lang.reflect.Field;
-import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 
 
 /**
@@ -57,7 +57,7 @@ public class Runner {
             StringBuffer stringBuffer = new StringBuffer();
             stringBuffer.append(result);
             stringBuffer.toString().intern();
-            InputStream is = new ByteArrayInputStream(Charset.forName("UTF-16").encode(result).array());
+            InputStream is = new ByteArrayInputStream(StandardCharsets.UTF_16.encode(result).array());
             for (int j = 0; j < 1000000000; j++) {
                 Class c = classPool.makeClass("com.epam.introdactionToJVM.homework.task1.Runner" + j).toClass();
                 System.out.println(c.getName());

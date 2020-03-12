@@ -24,7 +24,7 @@ public class DeduplicationStringDemo {
         while (true) {
             for (int i = 0; i < 100; i++) {
                 for (int j = 0; j < 1000; j++) {
-                    pool.add(new String("String" + j));
+                    pool.add("String" + j);
                 }
             }
             iteration++;

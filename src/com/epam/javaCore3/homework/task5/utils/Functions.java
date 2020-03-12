@@ -9,7 +9,7 @@ import static java.util.stream.Collectors.toList;
 
 public class Functions {
     public static boolean isSomeBooksHaveMoreThan200Pages(Book[] books) {
-        return Arrays.stream(books).filter(book -> book.getNumberOfPages() > 200).count() > 0 ? true : false;
+        return Arrays.stream(books).filter(book -> book.getNumberOfPages() > 200).count() > 0;
     }
 
     public static Book findBookWithMaxNumberOfPages(Book[] books) {
