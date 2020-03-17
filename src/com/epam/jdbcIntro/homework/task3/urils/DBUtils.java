@@ -50,7 +50,7 @@ public class DBUtils extends DBConnection {
                 FriendshipController.addFriendship(friendship);
             } catch (SQLException e) {
                 e.printStackTrace();
-            };
+            }
 
         }
     }

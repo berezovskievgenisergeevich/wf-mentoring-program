@@ -90,7 +90,7 @@ public class Runner {
      * @return
      */
     public static String convertToDollar(int number) {
-        Function<Integer, String> function = x -> String.valueOf(x) + "$";
+        Function<Integer, String> function = x -> x + "$";
         return function.apply(number);
     }
 

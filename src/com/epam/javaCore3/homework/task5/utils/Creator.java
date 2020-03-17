@@ -75,7 +75,7 @@ public class Creator {
 
 
     private static Author[] createAuthorsWithoutBook(int count) {
-        Author authors[] = new Author[count];
+        Author[] authors = new Author[count];
         for (int i = 0; i < count; i++) {
             authors[i] = createAuthor(i);
         }
@@ -83,7 +83,7 @@ public class Creator {
     }
 
     private static Book[] createBooksWithoutAuthors(int count) {
-        Book books[] = new Book[count];
+        Book[] books = new Book[count];
         for (int i = 0; i < count; i++) {
             books[i] = createBook(i);
         }
